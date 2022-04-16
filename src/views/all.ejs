@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./components/head.ejs') %> <%-
+    include('./components/allstyle.ejs') %>
+  </head>
+  <body>
+    <div id="loading">
+      <img src="/assets/images/loading.gif" alt="" srcset="" />
+    </div>
+    <div class="container">
+      <h1>Ujian Tengah Semester</h1>
+      <form class="form" id="form">
+        <div class="icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input
+          autocomplete="off"
+          type="text"
+          name="search"
+          placeholder="NISN Siswa, Ex:479100320010197"
+        />
+        <button type="submit" class="btnSearch">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      <div class="menu">
+        <a href="/A">Data A</a>
+        <a href="/B">Data B</a>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  $("#form").on("submit", (e) => {
+    e.preventDefault();
+    $("#loading").css("display", "flex");
+    const form = $("#form").serializeArray();
+    const search = form[0].value;
+    window.location = `/detail/${search}`;
+  });
+</script>

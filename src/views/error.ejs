@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./components/head.ejs') %>
+    <style>
+      .container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1{
+        font-size: 30px;
+      }
+      p{
+        margin: 20px 0px;
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      .btnBack{
+        text-decoration: none;
+        padding: 10px;
+        width: 120px;
+        text-align: center;
+        background-color: #073a5c;
+        color: #fff;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+      .btnBack:hover{
+        background-color: #0099ff;
+        color: #fff;
+      }
+    </style>
+  </head>
+<body>
+  <div class="container">
+    <h1>
+      Terjadi Kesalahan  
+    </h1>
+    <p><%= data %></p>
+    <a href="/" class="btnBack">Kembali</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<style>
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1{
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.form{
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #ccc;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  overflow: hidden;
+  padding: 5px;
+}
+.icon{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  min-width: 450px !important;
+  max-width: 100%;
+  padding: 0px 10px;
+  border: none;
+}
+input:focus{
+  outline: none;
+}
+.btnSearch{
+  border: none;
+  background-color: #073a5c;
+  width: 50px;
+  border-radius: 50px;
+  color: #fff;
+  transition: 0.5s;
+}
+.btnSearch:hover{
+  background-color: #0099ff;
+}
+#loading{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+}
+#loading img{
+  width: 100px;
+}
+.menu{
+  margin-top: 40px;
+}
+.menu a{
+  text-decoration: none;
+  background-color: #073a5c;
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.5s;
+}
+.menu a:hover{
+  background-color: #0099ff;
+  color: #fff;
+}
+</style>
